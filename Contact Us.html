@@ -1,0 +1,284 @@
+<html>
+<head>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ 
+<link rel="stylesheet" href="main.css">
+
+<style>
+
+body{margin:0px;}
+
+.feelfree{
+	margin: 30px 10px 20px 10px;
+	font-size:14px;	
+}
+
+#location{
+	border:5px solid white;
+	margin: 80px 40px;
+}
+
+.line3{
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  text-decoration: none;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 14px;
+  /* background-color: hsla(209 20% 70% / 20%); */ /* For dark theme */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.icon > i {
+  color: #2dd4bf;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+.icon:hover > i {
+  scale: 1.2;
+  color: #f1f1f1;
+}
+
+.icon:before {
+  background: var(--color);
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.icon:hover:before {
+  animation: slide 0.7s forwards;
+}
+
+@keyframes slide {
+  50% {
+    left: 10%;
+    top: -40%;
+  }
+
+  100% {
+    left: -15%;
+    top: -15%;
+  }
+}
+
+.icon:has(.fa-instagram) {
+  --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.icon:has(.fa-linkedin-in) {
+  --color: #0077b5;
+}
+.icon:has(.fa-youtube) {
+  --color: #ff0000;
+}
+.icon:has(.fa-x-twitter) {
+  --color: #1da1f2;
+}
+.icon:has(.fa-github) {
+  --color: #333;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- --------------------------------------Section-1-------------------------------------- -->
+<nav id="navbar" class="navbar">
+
+	<a id="nav" href="https://aintoto.com/">
+   	<img id="logo" src="image/logo.png" alt="Aintoto" width="180" height="60">
+	</a>
+
+	<div class="rightbutton" id="myTopnav">
+		<a class="btn1" href="home.html">Home</a>	
+		<a class="btn1" href="About us.html">About Us</a>
+		<a class="btn1" href="service.html">Services</a>
+		<a class="btn1" href="portfolio.html">Portfolio</a>
+		<a class="btn1" href="contact us.html">Contact Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  		</a>
+	</div>
+
+</nav>
+
+<!-- --------------------------------------Section-1-------------------------------------- -->
+
+<div class="line1" >
+	<div class="left1">
+		
+		<p id="title"> Contact<strong>&nbsp Info</strong></p>
+		
+		<div class="pmain" id="contactunderline" >
+			<hr>
+			<i id="bar" style="margin: 5px 10px 10px 10px;" class="fa-solid fa-chevron-down"></i>
+			<hr>	
+		</div>
+
+		<i class="fas fa-map-marker-alt"></i>
+		<p id="fulladdress"><strong>2nd Floor, Parth Complex, On-Off (Light 
+			Showroom) ni Gali, opposite Banarasi Pan,
+			Nanpura, Surat- 395001, Gujarat</strong></p>
+		<p>Please call before visit</p>
+		 
+		<br><br>
+
+		<i class='fas fa-mobile-alt'></i>
+		<p><strong>+91 87804-90120</strong></p>
+		<p>Business days 8AM – 7PM</p>
+
+		<br><br>
+
+		<i class="far fa-envelope"></i>
+		<p><strong>harsh@kalpataruinnovation.com</strong></p>
+		<p>For clients & partners</p>
+
+	</div>
+
+	<div class="right1">
+		<img src="image/img3.jpg" width="100%">
+	</div>
+</div>
+<!-- --------------------------------------Section-2-------------------------------------- -->
+
+<section class="line2">
+
+	<div class="left2">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.0051836106!2d72.812818!3d21.192056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfaf27f05216b30b1!2sAINTOTO!5e0!3m2!1sen!2sin!4v1676888574682!5m2!1sen!2sin" width="666" height="600" id="location" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+	</div>
+
+	<div class="right2">
+		<p id="title" ><strong>Enquiry Form</strong></p>
+		<p class="feelfree">For Any Query Feel Free To Contact Us!</p>
+		
+		<div class="pmain" id="line2right2" >
+			<hr id="bar">
+			<i id="bar" style="margin: 5px 10px 10px 10px;" class="fa-solid fa-chevron-down"></i>
+			<hr id="bar">	
+		</div>
+
+		<div class="form">
+			<input class="formname" type="text" placeholder="First Name*" required>
+			<input class="formname" type="text" placeholder="Last Name*" required><br><br>
+			<input type="email" class="email" placeholder="Email ID*" required><br><br>
+			<input id="phone" type="tel" name="phone" />	<br><br>		
+			<textarea placeholder="Message" cols="88" rows="10"></textarea><br><br>
+			<button type="submit" class="button"> Submit</button>
+		</div>
+	</div>
+</section>
+
+<section class="line3">
+	<div class="wrapper">
+      <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+    </div>
+</section>
+<!-- --------------------------------------Section-nav-------------------------------------- -->
+
+
+<div class="footer">
+
+	<a id="backtotop" href="#navbar"><i class='fas fa-angle-double-up'></i></a>
+		
+	<div class="f1">
+		<h3><strong>About Aintoto</strong></h3>
+		<p>Aintoto is built on a proud history of quality workmanship & Innovation with a strong commitment to our clients & building Partners.</p>
+	</div>
+
+	<div class="f2">
+		<h3><strong>QUICK LINKS</strong></h3>
+	
+		<ul>
+			<li><i class="fa-solid fa-chevron-right"></i><a id="h" href="home.html"> &nbsp Home</a></li>
+			<li><i class="fa-solid fa-chevron-right"></i><a id="h" href="About us.html"> &nbsp About Us</a></li>
+			<li><i class="fa-solid fa-chevron-right"></i><a id="h" href="Service.html"> &nbsp Services</a></li>
+			<li><i class="fa-solid fa-chevron-right"></i><a id="h" href="portfolio.html"> &nbsp Portfolio</a></li>
+			<li><i class="fa-solid fa-chevron-right"></i><a id="h" href="contact us.html"> &nbsp Contact Us</a></li>		
+		</ul>
+	</div>
+
+	<div class="f3">
+		<h3><strong>CONTACT US</strong></h3>
+		<i class="fas fa-map-marker-alt"></i>
+		<p id="add">2nd Floor, Parth Complex, On-Off (Light 
+			Showroom) ni Gali, opposite Banarasi Pan,
+			Nanpura, Surat- 395001, Gujarat</p>
+		 
+		<p><i class="fas fa-phone"></i>&nbsp&nbsp&nbsp +91 98251-32597</p>
+		<p><i class="far fa-envelope"></i>&nbsp&nbsp&nbsp info@aintoto.com</p>
+		<input class="c-checkbox" type="checkbox" id="checkbox">
+		<div class="c-formContainer">
+		<form class="c-form" action="">
+			<input  class="c-form__input" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+			<label class="c-form__buttonLabel" for="checkbox">
+			<button class="c-form__button" type="button" style="font-size: 14px;text-transform: uppercase;">Send</button>
+			</label>
+			<label class="c-form__toggle" for="checkbox" data-title="Notify me"></label>
+		</form>
+		</div>
+	</div>
+</div>	  
+</body>
+
+  <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "rightbutton") {
+    x.className += " responsive";
+  } else {
+    x.className = "rightbutton";
+  }
+}
+</script>
+
+</html>
